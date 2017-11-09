@@ -81,6 +81,7 @@ body {
     height: 40px;
     text-align: center;
     margin: -1px;
+    transition: 0.5s background-color;
 }
 
 .navbar #donate {   
@@ -109,6 +110,7 @@ body {
     border-bottom: 1px solid white;
     border-left: 1px solid white;
     border-right: 1px solid white;
+    transition: 0.5s background-color;
 }
 
 .navbar .dropdown-content li p {
@@ -200,7 +202,7 @@ body {
 }
 
 .sign-up textarea {
-    width: 271px;
+    width: 275px;
     height: 100px;
     margin: 3px 10px;
     border: none;
