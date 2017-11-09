@@ -1,5 +1,5 @@
 function fade() {
-    document.body.classList.remove('fade-out');
+    document.getElementsByClassName("fade")[0].style.opacity = 1;
 }
 
 function displayDropdown() {

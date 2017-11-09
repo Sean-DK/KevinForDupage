@@ -12,7 +12,6 @@
         <title>Kevin For DuPage</title>
     </head>
     <body onload="fade()">
-        <script>document.body.className += ' fade-out';</script>
         <div class="top-panel">
             <div class="panel-background"></div>
             <div class="panel-accent"></div>
@@ -23,59 +22,62 @@
         </div> <!--Top Panel-->
         <div class="navbar">
             <ul>
-                <a href=""><li id="active"><p>HOME</p></li></a>
+                <a href="#"><li id="active"><p>HOME</p></li></a>
                 <a href="../about/about.html"><li><p>ABOUT</p></li></a>
                 <a href="../get_involved/get_involved.html"><li><p>GET INVOLVED</p></li></a>
                 <a href="../press/press.html" onmouseover="displayDropdown()" onmouseleave="hideDropdown()"><li><p>PRESS</p></li></a>
                 <a href="../contact/contact.html"><li><p>CONTACT</p></li></a>
-                <a href=""><li id="donate"><p>DONATE</p></li></a>
+                <a href="https://www.paypal.me/KevinOyakawa"><li id="donate"><p>DONATE</p></li></a>
                 <div class="dropdown-content" onmouseover="displayDropdown()" onmouseleave="hideDropdown()">
                     <a href="../press/articles/articles.html"><li><p style="font-size: 80%;">ARTICLES</p></li></a>
                     <a href="../press/press_releases/press_releases.html"><li><p style="font-size: 80%;">PRESS RELEASES</p></li></a>
                 </div> <!--Dropdown-->
             </ul>
         </div> <!--Navbar-->
-        <div class="opening-content">
-            <img src="podium_img.jpg">
-            <div class="welcome-message">
-                <h1>Kevin Oyakawa</h1>
-                <h2>for DuPage County Board District 5 2018</h2>
-                <h3>People - not politics.</h3>
-            </div> <!--Welcome Message-->
-            <div class="sign-up">
-                <div class="background"></div>
-                <h1>Join the Campaign Today!</h1>
-                <form>
-                    <input type="text" name="name" placeholder="Name"><br>
-                    <input type="text" name="email" placeholder="Email"><br>
-                    <input type="text" name="phone" placeholder="Phone"><br>
-                    <input type="text" name="address" placeholder="Address"><br>
-                    <input id="button" type="submit" name="submit" value="Send">
-                </form>
-            </div> <!--Sign Up-->
-        </div> <!--Opening Content-->
-        <div class="quick-links">
-            <div class="volunteer">
-                <span style="position:absolute;width:100%;height:100%;cursor:pointer;text-align:center;color:#0074D9">
-                    <h1 style="font-family:arial;position:relative;top:55px">VOLUNTEER</h1> 
-                    <h2 style="font-size:16px;margin: 60px 10px;font-family:sans-serif">Join us. We would be honored to have you as part of our team.</h2>
-                    <img src="volunteer_img.png" style="position:relative;top:-210px">
-                </span>
-            </div> <!--Volunteer-->
-            <div class="stay-connected">
-                <span style="position:absolute;width:100%;height:100%;cursor:pointer;text-align:center;color:white">
-                    <h1 style="font-family:arial;position:relative;top:55px">STAY CONNECTED</h1>
-                    <h2 style="font-size:16px;margin: 60px 10px;font-family:sans-serif">Sign up above to get campaign updates and contact us with any comments or questions.</h2>
-                    <img src="stayconnected_img.png" style="position:relative;top:-230px">
-                </span>
-            </div> <!--Stay Connected-->
-            <div class="donate">
-                <span style="position:absolute;width:100%;height:100%;cursor:pointer;text-align:center;color:#0074D9">
-                    <h1 style="font-family:arial;position:relative;top:55px">DONATE</h1>
-                    <h2 style="font-size:16px;margin: 60px 30px;font-family:sans-serif">Thank you for your support. Your contributions make this campaign possible.</h2>
-                    <img src="donate_image.png" style="position:relative;top:-230px">
-                </span>
-            </div> <!--Donate-->
-        </div> <!--Quick Links-->
+        <div class="fade">
+            <div class="opening-content">
+                <img src="podium_img.jpg" width="1000px">
+                <div class="welcome-message">
+                    <h1>Kevin Oyakawa</h1>
+                    <h2>for DuPage County Board District 5 2018</h2>
+                    <h3>People - not politics.</h3>
+                </div> <!--Welcome Message-->
+                <div class="sign-up">
+                    <div class="background"></div>
+                    <h1>Join the Campaign Today!</h1>
+                    <form>
+                        <input type="text" name="name" placeholder="Name"><br>
+                        <input type="text" name="email" placeholder="Email"><br>
+                        <input type="text" name="phone" placeholder="Phone"><br>
+                        <input type="text" name="address" placeholder="Address"><br>
+                        <textarea name="message" placeholder="Message"></textarea><br>
+                        <input id="button" type="submit" name="submit" value="Send">
+                    </form>
+                </div> <!--Sign Up-->
+            </div> <!--Opening Content-->
+            <div class="quick-links">
+                <div class="volunteer">
+                    <span style="position:absolute;width:100%;height:100%;cursor:pointer;text-align:center;color:#0074D9" onclick="location.href='../get_involved/get_involved.html'">
+                        <h1 style="font-family:arial;position:relative;top:55px">VOLUNTEER</h1> 
+                        <h2 style="font-size:16px;margin: 60px 10px;font-family:sans-serif">Join us. We would be honored to have you as part of our team.</h2>
+                        <img src="volunteer_img.png" style="position:relative;top:-210px">
+                    </span>
+                </div> <!--Volunteer-->
+                <div class="stay-connected">
+                    <span style="position:absolute;width:100%;height:100%;cursor:pointer;text-align:center;color:white" onclick="location.href='../get_involved/get_involved.html'">
+                        <h1 style="font-family:arial;position:relative;top:55px">STAY CONNECTED</h1>
+                        <h2 style="font-size:16px;margin: 60px 10px;font-family:sans-serif">Sign up above to get campaign updates and contact us with any comments or questions.</h2>
+                        <img src="stayconnected_img.png" style="position:relative;top:-230px">
+                    </span>
+                </div> <!--Stay Connected-->
+                <div class="donate">
+                    <span style="position:absolute;width:100%;height:100%;cursor:pointer;text-align:center;color:#0074D9" onclick="location.href='https://www.paypal.me/KevinOyakawa'">
+                        <h1 style="font-family:arial;position:relative;top:55px">DONATE</h1>
+                        <h2 style="font-size:16px;margin: 60px 30px;font-family:sans-serif">Thank you for your support. Your contributions make this campaign possible.</h2>
+                        <img src="donate_image.png" style="position:relative;top:-230px">
+                    </span>
+                </div> <!--Donate-->
+            </div> <!--Quick Links-->
+        </div> <!--Fade-->
     </body>
 </html>
