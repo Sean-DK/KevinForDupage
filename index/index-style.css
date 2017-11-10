@@ -81,7 +81,6 @@ body {
     height: 40px;
     text-align: center;
     margin: -1px;
-    transition: 0.5s background-color;
 }
 
 .navbar #donate {   
@@ -110,7 +109,6 @@ body {
     border-bottom: 1px solid white;
     border-left: 1px solid white;
     border-right: 1px solid white;
-    transition: 0.5s background-color;
 }
 
 .navbar .dropdown-content li p {
@@ -232,6 +230,7 @@ body {
     border: 1px solid #001f3f;
     width: 328px;
     height: 200px;
+    left: 2px;
 }
 
 .quick-links .stay-connected {
@@ -240,7 +239,7 @@ body {
     border: 1px solid #001f3f;
     width: 328px;
     height: 200px;
-    left: 333px;
+    left: 335px;
     top: -202px;
 }
 
@@ -249,6 +248,69 @@ body {
     border: 1px solid #001f3f;
     width: 328px;
     height: 200px;
-    left: 666px;
+    left: 668px;
     top: -404px;
+}
+
+.intro-video {
+    width: 1000px;
+    margin: auto;
+}
+
+.video {
+    margin: 25px 25px;
+    position: relative;
+    width: 450px;
+    height: 250px;
+}
+
+.video-description {
+    position: relative;
+    width: 450px;
+    top: -300px;
+    float: right;
+    margin: 25px 25px;
+    color: #001f3f;
+}
+
+.video-description button {
+    border: none;
+    background-color: #001f3f;
+    color: white;
+    height: 32px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.campaign-buzz {
+    width: 1000px;
+    margin: auto;
+    overflow: auto;
+}
+
+.campaign-buzz .header {
+    background-color: #001f3f;
+    color: white;
+    width: 1000px;
+    text-align: center;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+.campaign-buzz button {
+    border: none;
+    background-color: #001f3f;
+    color: white;
+    height: 32px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 98.9vw;
+    height: 35px;
+    margin: -10px;
+    background-color: #001f3f;
 }
